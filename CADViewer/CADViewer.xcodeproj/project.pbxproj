@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1A72680B377587A4F77CB73 /* Pods_CADViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7784DE044FFAB8F642ED7 /* Pods_CADViewer.framework */; };
 		BC857F762530142800CBB9C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC857F752530142800CBB9C8 /* AppDelegate.swift */; };
 		BC857F782530142800CBB9C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC857F772530142800CBB9C8 /* SceneDelegate.swift */; };
 		BC857F7A2530142800CBB9C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC857F792530142800CBB9C8 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C3C820520BC6D3E3B198515 /* Pods-CADViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CADViewer.debug.xcconfig"; path = "Target Support Files/Pods-CADViewer/Pods-CADViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC7784DE044FFAB8F642ED7 /* Pods_CADViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CADViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC857F722530142800CBB9C8 /* CADViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CADViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC857F752530142800CBB9C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC857F772530142800CBB9C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BC857F7E2530142A00CBB9C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC857F812530142A00CBB9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC857F832530142A00CBB9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E772941FD40115FF4D8B8BC7 /* Pods-CADViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CADViewer.release.xcconfig"; path = "Target Support Files/Pods-CADViewer/Pods-CADViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A72680B377587A4F77CB73 /* Pods_CADViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61A29E7645509155AB1C64D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7784DE044FFAB8F642ED7 /* Pods_CADViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9395D256D9C22D3A391C3D1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C3C820520BC6D3E3B198515 /* Pods-CADViewer.debug.xcconfig */,
+				E772941FD40115FF4D8B8BC7 /* Pods-CADViewer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC857F692530142800CBB9C8 = {
 			isa = PBXGroup;
 			children = (
 				BC857F742530142800CBB9C8 /* CADViewer */,
 				BC857F732530142800CBB9C8 /* Products */,
+				9395D256D9C22D3A391C3D1A /* Pods */,
+				61A29E7645509155AB1C64D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC857F862530142A00CBB9C8 /* Build configuration list for PBXNativeTarget "CADViewer" */;
 			buildPhases = (
+				A136AB00ED207DF16F633AE0 /* [CP] Check Pods Manifest.lock */,
 				BC857F6E2530142800CBB9C8 /* Sources */,
 				BC857F6F2530142800CBB9C8 /* Frameworks */,
 				BC857F702530142800CBB9C8 /* Resources */,
+				32101278D9B8D0B813E7B503 /* [CP] Embed Pods Frameworks */,
+				F630548A10E327C77081AF31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +159,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32101278D9B8D0B813E7B503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A136AB00ED207DF16F633AE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CADViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F630548A10E327C77081AF31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CADViewer/Pods-CADViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC857F6E2530142800CBB9C8 /* Sources */ = {
@@ -283,6 +370,7 @@
 		};
 		BC857F872530142A00CBB9C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3C820520BC6D3E3B198515 /* Pods-CADViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +391,7 @@
 		};
 		BC857F882530142A00CBB9C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E772941FD40115FF4D8B8BC7 /* Pods-CADViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
