@@ -9,19 +9,19 @@ import UIKit
 import PDFNet
 import Tools
 
+// CAD file
 let DWG_URL = "https://pdftron.s3.amazonaws.com/downloads/pl/visualization_condominium_with_skylight.dwg";
 
-let BASE_URL = "https://demo.pdftron.com/"; // Your server root
+// Your server root
+let BASE_URL = "https://demo.pdftron.com/";
 
 class ViewController: UIViewController {
     
     let pdfController = PTDocumentController()
 
     override func viewDidAppear(_ animated: Bool) {
-        // Do any additional setup after loading the view.
+
         super.viewDidAppear(animated)
-        
-        
         
         let navController = UINavigationController(rootViewController: pdfController)
         navController.navigationBar.isTranslucent = false
@@ -33,15 +33,7 @@ class ViewController: UIViewController {
     }
     
     func displayCADFile(_ cadFileUrl : URL) {
-        // stuff
-        
-//        let urlRequest = MutableURLRequest()
-//
-//        urlRequest.httpMethod = "GET"
-//        urlRequest.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
-        
-        
-        
+
         var urlComponents = URLComponents(url: URL(string: BASE_URL)!, resolvingAgainstBaseURL: true)
         
         urlComponents?.path = "/blackbox/GetPDF"
@@ -65,7 +57,7 @@ class ViewController: UIViewController {
             defer {
               dataTask = nil
             }
-            // 5
+
             if let error = error {
               print("DataTask error: " + error.localizedDescription + "\n")
             } else if
@@ -74,7 +66,7 @@ class ViewController: UIViewController {
               response.statusCode == 200 {
                 
 
-                struct Response: Codable { // or Decodable
+                struct Response: Codable {
                   let uri: String
                 }
 
@@ -87,7 +79,7 @@ class ViewController: UIViewController {
                   }
                        
                 
-              // 6
+
               DispatchQueue.main.async {
                 // open doc
                 let docLocation = URL(string: BASE_URL+"/blackbox/"+res.first!.uri)!
@@ -95,7 +87,7 @@ class ViewController: UIViewController {
               }
             }
           }
-          // 7
+
           dataTask?.resume()
         
     }
