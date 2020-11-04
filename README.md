@@ -1,8 +1,6 @@
-# pdftron-ios-samples
+# PDFTron iOS Samples
 
-This is a collection of samples for PDFTron's iOS SDK.
-
-
+This repository contains a collection of samples for PDFTron's iOS SDK.
 
 | Sample | Description |
 |--|--|
