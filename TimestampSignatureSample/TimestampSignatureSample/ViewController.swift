@@ -29,7 +29,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         pdfController.toolGroupIndicatorView.isHidden = true
-        pdfController.toolGroupManager.selectedGroup = pdfController.toolGroupManager.viewItemGroup
+        
+        guard let items = pdfController.toolGroupManager.insertItemGroup.barButtonItems else {
+            pdfController.toolGroupManager.selectedGroup = pdfController.toolGroupManager.viewItemGroup
+            return
+        }
+        
+        for item in items {
+            if let item = item as? PTToolBarButtonItem {
+                if item.toolClass == DigitalSignatureTool.self {
+                    pdfController.toolGroupManager.insertItemGroup.barButtonItems = [item]
+                    break
+                }
+            }
+        }
+        pdfController.toolGroupManager.selectedGroup = pdfController.toolGroupManager.insertItemGroup
         pdfController.delegate = self
         if let path = Bundle.main.path(forResource: "blank", ofType: "pdf"), let doc = PTPDFDoc(filepath: path) {
             pdfController.openDocument(with: doc)
