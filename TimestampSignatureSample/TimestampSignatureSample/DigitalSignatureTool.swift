@@ -49,6 +49,6 @@ class DigitalSignatureTool: PTDigitalSignatureTool {
     }
     
     func createTimestampSignatureForWidget(doc: PTPDFDoc) -> PTPDFDoc {
-        return createTimestampSignature(doc: doc, width: 500, height: 300)
+        return createTimestampSignature(doc: doc, width: 500, height: 450)
     }
 }
