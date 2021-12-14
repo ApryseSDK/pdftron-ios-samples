@@ -5,7 +5,7 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 | Sample | Description |
 |--|--|
 |[CADViewer](./CADViewer)| CAD to PDF conversion using WebViewer Server as described [in this guide](https://www.pdftron.com/documentation/web/guides/wv-server-usage/#getpdf)|
-
+|[TimestampSignatureSample](./TimestampSignatureSample)| Shows how to include the current date to a signature by customizing the signature tool. |
 
 More samples are included in the [.dmg download](https://www.pdftron.com/documentation/ios/get-started/integration/manually/):
 
