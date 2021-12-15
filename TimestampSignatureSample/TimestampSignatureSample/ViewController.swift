@@ -66,10 +66,11 @@ extension ViewController: PTDocumentControllerDelegate {
         let page = doc.getPage(1)
         
         let sigField = doc.createDigitalSignatureField("TimestampSignature")
-        let signature = PTSignatureWidget.create(withDigitalSignatureField: doc, pos: PTPDFRect(x1: 100, y1: 100, x2: 500, y2: 300), field: sigField)
+        let signature = PTSignatureWidget.create(withDigitalSignatureField: doc, pos: PTPDFRect(x1: 100, y1: 500, x2: 500, y2: 300), field: sigField)
         signature?.refreshAppearance()
         page?.annotPushBack(signature)
-        doc.pagePushBack(page)
+        
+        documentController.pdfViewCtrl.update()
     }
 }
 
