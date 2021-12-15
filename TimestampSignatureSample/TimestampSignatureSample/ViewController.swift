@@ -54,7 +54,6 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let navController = UINavigationController(rootViewController: pdfController)
-        navController.navigationBar.isTranslucent = false
         navController.modalPresentationStyle = .fullScreen
         present(navController, animated: true, completion: nil)
     }
