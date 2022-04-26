@@ -14,7 +14,6 @@
 		7DECC1802818AE1D003435DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DECC17F2818AE1D003435DA /* Assets.xcassets */; };
 		7DECC1832818AE1D003435DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DECC1812818AE1D003435DA /* LaunchScreen.storyboard */; };
 		7DECC1862818AE1E003435DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DECC1852818AE1E003435DA /* main.m */; };
-		7DECC18E2818AEE3003435DA /* PDFTronCollaboration in Frameworks */ = {isa = PBXBuildFile; productRef = 7DECC18D2818AEE3003435DA /* PDFTronCollaboration */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DECC18E2818AEE3003435DA /* PDFTronCollaboration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +93,6 @@
 			);
 			name = "PreBuiltRealTimeCollaborationObj-C";
 			packageProductDependencies = (
-				7DECC18D2818AEE3003435DA /* PDFTronCollaboration */,
 			);
 			productName = "PreBuiltRealTimeCollaborationObj-C";
 			productReference = 7DECC1702818AE1C003435DA /* PreBuiltRealTimeCollaborationObj-C.app */;
@@ -125,7 +122,6 @@
 			);
 			mainGroup = 7DECC1672818AE1C003435DA;
 			packageReferences = (
-				7DECC18C2818AEE3003435DA /* XCRemoteSwiftPackageReference "ios-real-time-collaboration" */,
 			);
 			productRefGroup = 7DECC1712818AE1C003435DA /* Products */;
 			projectDirPath = "";
@@ -367,25 +363,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		7DECC18C2818AEE3003435DA /* XCRemoteSwiftPackageReference "ios-real-time-collaboration" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/PDFTron/ios-real-time-collaboration";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7DECC18D2818AEE3003435DA /* PDFTronCollaboration */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7DECC18C2818AEE3003435DA /* XCRemoteSwiftPackageReference "ios-real-time-collaboration" */;
-			productName = PDFTronCollaboration;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DECC1682818AE1C003435DA /* Project object */;
 }
