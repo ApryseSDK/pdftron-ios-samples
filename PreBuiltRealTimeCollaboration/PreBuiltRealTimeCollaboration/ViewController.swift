@@ -20,7 +20,7 @@ class ViewController: UIViewController {
               let endpointURL = URL(string:"https://collab-server.pdftron.com")
         else {return}
 
-        let documentID = randomString(length: 10) // Leave blank to generate a new document
+        let documentID = "" // Leave blank to generate a new document
 
         let username = "Guest"
 
@@ -55,11 +55,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-    }
-    
-    func randomString(length: Int) -> String {
-      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-      return String((0..<length).map{ _ in letters.randomElement()! })
     }
 
     override func viewDidAppear(_ animated: Bool) {
