@@ -65,6 +65,9 @@
     [self.documentController openDocumentWithURL:fileURL];
     
     NSMutableArray<UIBarButtonItem*>* leftBarItems = [self.documentController.navigationItem.leftBarButtonItems mutableCopy];
+    if(leftBarItems == nil) {
+        leftBarItems = [NSMutableArray array];
+    }
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareDocument)];
     [leftBarItems addObject:shareButton];
     self.documentController.navigationItem.leftBarButtonItems = [leftBarItems copy];

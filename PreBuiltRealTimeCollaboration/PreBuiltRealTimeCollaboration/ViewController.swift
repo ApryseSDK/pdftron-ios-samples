@@ -85,11 +85,13 @@ class ViewController: UIViewController {
         // Optional: add a share button to the viewer to
         let shareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareDocument))
 
+        var leftBarButtonItems = [shareButton]
         if let leftBarItems = documentController.navigationItem.leftBarButtonItems {
-            var leftBarButtonItems = leftBarItems
+            // If there are already items in the viewer's `leftBarButtonItems` then append the share button
+            leftBarButtonItems = leftBarItems
             leftBarButtonItems.append(shareButton)
-            documentController.navigationItem.leftBarButtonItems = leftBarButtonItems
         }
+        documentController.navigationItem.leftBarButtonItems = leftBarButtonItems
 
         self.present(navVC, animated: true, completion: nil)
     }
