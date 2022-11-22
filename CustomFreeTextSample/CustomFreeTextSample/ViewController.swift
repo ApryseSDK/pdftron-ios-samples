@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         pdfView.setDoc(docToOpen)
         self.toolManager = PTToolManager(pdfViewCtrl: self.pdfView)
         self.toolManager?.delegate = self
+        pdfView.toolDelegate = toolManager
+        self.toolManager?.changeTool(PTPanTool.self)
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -51,18 +53,18 @@ class ViewController: UIViewController {
             txtannot.setContentRect(pdfView.cgRectScreen2PDFRectPage(rect, pageNumber: pdfView.currentPage))
             txtannot.setContents("Custom Text")
             
-            txtannot = createAppearanceForFreeText(freeText: txtannot, onDoc: doc)
-            
             page?.annotPushBack(txtannot)
             pdfView.update(with: txtannot, page_num: Int32(pdfView.currentPage))
+
+            createAppearanceForFreeText(freeText: txtannot, onDoc: doc)
         }
     }
     
-    private func createAppearanceForFreeText(freeText: PTFreeText, onDoc doc:PTPDFDoc) -> PTFreeText {
+    private func createAppearanceForFreeText(freeText: PTAnnot, onDoc doc:PTPDFDoc) {
         doc.lock()
         guard let freeTextRect = freeText.getRect() else {
             doc.unlock()
-            return freeText
+            return
         }
         
         // create custom free text view from existing free text annotation
@@ -76,13 +78,13 @@ class ViewController: UIViewController {
         // set opacity on the background free text
         
         containerView.backgroundColor = fillColor?.withAlphaComponent(0.2)
-        containerView.layer.borderColor = PTColorDefaults.uiColor(from: freeText.getLineColor(), compNum: 3)?.cgColor
+        containerView.layer.borderColor = UIColor.red.cgColor
         containerView.layer.borderWidth = borderWidth
         
         let label = PTVectorLabel(frame: CGRect(x: 0, y: 0, width: freeTextRect.width() - borderWidth * 2, height: freeTextRect.height() - borderWidth * 2))
         label.numberOfLines =  0
         label.allowsDefaultTighteningForTruncation = false
-        label.font = UIFont(name: freeText.getFontName() ?? "Helvetica", size: freeText.getFontSize())
+        label.font = UIFont(name: "Helvetica", size: 12)
         label.textAlignment = .left
         label.textColor = .red
         label.contentMode = .top
@@ -122,11 +124,11 @@ class ViewController: UIViewController {
                 // set new appearance on free text
                 freeText.setAppearance(destAnnotObj, annot_state: e_ptnormal, app_state: nil)
                 doc.unlock()
-                return freeText
+                return
             }
         }
         doc.unlock()
-        return freeText
+        return
     }
 
 }
@@ -134,6 +136,12 @@ class ViewController: UIViewController {
 extension ViewController: PTToolManagerDelegate {
     func viewController(for toolManager: PTToolManager) -> UIViewController {
         self
+    }
+    
+    func toolManager(_ toolManager: PTToolManager, annotationModified annotation: PTAnnot, onPageNumber pageNumber: UInt) {
+        if annotation.extendedAnnotType == .freeText {
+            createAppearanceForFreeText(freeText: annotation, onDoc: pdfView.getDoc()!)
+        }
     }
 }
 
