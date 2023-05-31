@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27E26DCE5C65FEAD846B417B /* Pods_TimestampSignatureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017F7D26B6CAD0DF5296A784 /* Pods_TimestampSignatureSample.framework */; };
+		A479DCF1275ECA8200CDC4DC /* blank.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A479DCF0275ECA8200CDC4DC /* blank.pdf */; };
+		A479DCF7275EDBEA00CDC4DC /* DigitalSignatureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479DCF6275EDBEA00CDC4DC /* DigitalSignatureTool.swift */; };
+		A4E65A2A275EBF8800D21DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E65A29275EBF8800D21DD8 /* AppDelegate.swift */; };
+		A4E65A2C275EBF8800D21DD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E65A2B275EBF8800D21DD8 /* SceneDelegate.swift */; };
+		A4E65A2E275EBF8800D21DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E65A2D275EBF8800D21DD8 /* ViewController.swift */; };
+		A4E65A31275EBF8800D21DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E65A2F275EBF8800D21DD8 /* Main.storyboard */; };
+		A4E65A33275EBF8900D21DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E65A32275EBF8900D21DD8 /* Assets.xcassets */; };
+		A4E65A36275EBF8900D21DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E65A34275EBF8900D21DD8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		017F7D26B6CAD0DF5296A784 /* Pods_TimestampSignatureSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimestampSignatureSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982169568715AD5330021A3E /* Pods-TimestampSignatureSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimestampSignatureSample.release.xcconfig"; path = "Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample.release.xcconfig"; sourceTree = "<group>"; };
+		A479DCF0275ECA8200CDC4DC /* blank.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = blank.pdf; sourceTree = "<group>"; };
+		A479DCF6275EDBEA00CDC4DC /* DigitalSignatureTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureTool.swift; sourceTree = "<group>"; };
+		A4E65A26275EBF8800D21DD8 /* TimestampSignatureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimestampSignatureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E65A29275EBF8800D21DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4E65A2B275EBF8800D21DD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4E65A2D275EBF8800D21DD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4E65A30275EBF8800D21DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4E65A32275EBF8900D21DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4E65A35275EBF8900D21DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4E65A37275EBF8900D21DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84EDAE77816DCC689E98BB3 /* Pods-TimestampSignatureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimestampSignatureSample.debug.xcconfig"; path = "Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4E65A23275EBF8800D21DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E26DCE5C65FEAD846B417B /* Pods_TimestampSignatureSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F4A374731EA85687617B929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				017F7D26B6CAD0DF5296A784 /* Pods_TimestampSignatureSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86DAF466EA311FB53F0DDA5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D84EDAE77816DCC689E98BB3 /* Pods-TimestampSignatureSample.debug.xcconfig */,
+				982169568715AD5330021A3E /* Pods-TimestampSignatureSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4E65A1D275EBF8800D21DD8 = {
+			isa = PBXGroup;
+			children = (
+				A4E65A28275EBF8800D21DD8 /* TimestampSignatureSample */,
+				A4E65A27275EBF8800D21DD8 /* Products */,
+				86DAF466EA311FB53F0DDA5F /* Pods */,
+				2F4A374731EA85687617B929 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4E65A27275EBF8800D21DD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E65A26275EBF8800D21DD8 /* TimestampSignatureSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4E65A28275EBF8800D21DD8 /* TimestampSignatureSample */ = {
+			isa = PBXGroup;
+			children = (
+				A4E65A29275EBF8800D21DD8 /* AppDelegate.swift */,
+				A479DCF0275ECA8200CDC4DC /* blank.pdf */,
+				A4E65A2B275EBF8800D21DD8 /* SceneDelegate.swift */,
+				A4E65A2D275EBF8800D21DD8 /* ViewController.swift */,
+				A479DCF6275EDBEA00CDC4DC /* DigitalSignatureTool.swift */,
+				A4E65A2F275EBF8800D21DD8 /* Main.storyboard */,
+				A4E65A32275EBF8900D21DD8 /* Assets.xcassets */,
+				A4E65A34275EBF8900D21DD8 /* LaunchScreen.storyboard */,
+				A4E65A37275EBF8900D21DD8 /* Info.plist */,
+			);
+			path = TimestampSignatureSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4E65A25275EBF8800D21DD8 /* TimestampSignatureSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E65A3A275EBF8900D21DD8 /* Build configuration list for PBXNativeTarget "TimestampSignatureSample" */;
+			buildPhases = (
+				A918D6041A3451AAD3B9DCA0 /* [CP] Check Pods Manifest.lock */,
+				A4E65A22275EBF8800D21DD8 /* Sources */,
+				A4E65A23275EBF8800D21DD8 /* Frameworks */,
+				A4E65A24275EBF8800D21DD8 /* Resources */,
+				3329250D5DEAFEC068E92236 /* [CP] Embed Pods Frameworks */,
+				245CC3BA72B1DB4F512587D3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimestampSignatureSample;
+			productName = TimestampSignatureSample;
+			productReference = A4E65A26275EBF8800D21DD8 /* TimestampSignatureSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4E65A1E275EBF8800D21DD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A4E65A25275EBF8800D21DD8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = A4E65A21275EBF8800D21DD8 /* Build configuration list for PBXProject "TimestampSignatureSample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4E65A1D275EBF8800D21DD8;
+			productRefGroup = A4E65A27275EBF8800D21DD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4E65A25275EBF8800D21DD8 /* TimestampSignatureSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4E65A24275EBF8800D21DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E65A36275EBF8900D21DD8 /* LaunchScreen.storyboard in Resources */,
+				A479DCF1275ECA8200CDC4DC /* blank.pdf in Resources */,
+				A4E65A33275EBF8900D21DD8 /* Assets.xcassets in Resources */,
+				A4E65A31275EBF8800D21DD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245CC3BA72B1DB4F512587D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3329250D5DEAFEC068E92236 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimestampSignatureSample/Pods-TimestampSignatureSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A918D6041A3451AAD3B9DCA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimestampSignatureSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4E65A22275EBF8800D21DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E65A2E275EBF8800D21DD8 /* ViewController.swift in Sources */,
+				A4E65A2A275EBF8800D21DD8 /* AppDelegate.swift in Sources */,
+				A4E65A2C275EBF8800D21DD8 /* SceneDelegate.swift in Sources */,
+				A479DCF7275EDBEA00CDC4DC /* DigitalSignatureTool.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4E65A2F275EBF8800D21DD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E65A30275EBF8800D21DD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4E65A34275EBF8900D21DD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E65A35275EBF8900D21DD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4E65A38275EBF8900D21DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4E65A39275EBF8900D21DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4E65A3B275EBF8900D21DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84EDAE77816DCC689E98BB3 /* Pods-TimestampSignatureSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRYP9G2XY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimestampSignatureSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pdftron.TimestampSignatureSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4E65A3C275EBF8900D21DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982169568715AD5330021A3E /* Pods-TimestampSignatureSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRYP9G2XY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimestampSignatureSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pdftron.TimestampSignatureSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4E65A21275EBF8800D21DD8 /* Build configuration list for PBXProject "TimestampSignatureSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E65A38275EBF8900D21DD8 /* Debug */,
+				A4E65A39275EBF8900D21DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E65A3A275EBF8900D21DD8 /* Build configuration list for PBXNativeTarget "TimestampSignatureSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E65A3B275EBF8900D21DD8 /* Debug */,
+				A4E65A3C275EBF8900D21DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4E65A1E275EBF8800D21DD8 /* Project object */;
+}
