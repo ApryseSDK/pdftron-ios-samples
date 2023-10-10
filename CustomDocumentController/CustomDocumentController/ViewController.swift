@@ -11,8 +11,8 @@ class ViewController: UIViewController {
 
     // https://docs.apryse.com/documentation/ios/get-started/viewdoc/
     override func viewDidAppear(_ animated: Bool) {
-        // Create a PTDocumentController
-        let documentController = PTDocumentController()
+        // Create a CustomDocumentController
+        let documentController = CustomDocumentController()
         // The PTDocumentController must be in a navigation controller before a document can be opened
         let navigationController = UINavigationController(rootViewController: documentController)
         navigationController.modalPresentationStyle = .fullScreen
