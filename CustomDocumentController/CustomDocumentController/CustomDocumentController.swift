@@ -11,24 +11,33 @@ class CustomDocumentController: PTDocumentController {
 
     // Override `PTToolManagerDelegate` methods here
     override func toolManager(_ toolManager: PTToolManager, shouldShowMenu menuController: UIMenuController, forAnnotation annotation: PTAnnot?, onPageNumber pageNumber: UInt) -> Bool {
-        // Only show quick menu for the text select tool.
-        guard let tool = toolManager.tool else {return true}
-        if tool.isKind(of: PTTextSelectTool.self) {
-            // Remove the annotation creation menu items.
-            menuController.menuItems = removeAnnotationItems(menuController.menuItems!)
-            return true
-        } else {
-            // If this tool is not the PTTextSelectTool, don't show the menu
-            return false
+        guard let annotation else { return true }
+        if annotation.extendedAnnotType == .widget { // only modify the menu for widget annotations
+            let selectDateItem = UIMenuItem(title: "Edit", action: #selector(editAction)) // you need to implement these
+            let removeItem = UIMenuItem(title: "Add to all Pages", action: #selector(addToAllPages))
+            menuController.menuItems = [selectDateItem, removeItem]
+        } else if annotation.extendedAnnotType == .freeText { // only modify the menu for widget annotations
+            let selectDateItem = UIMenuItem(title: "Select Date", action: #selector(selectDate)) // you need to implement these
+            let removeItem = UIMenuItem(title: "Remove", action: #selector(removeField))
+            menuController.menuItems = [selectDateItem, removeItem]
         }
+
+        return true
     }
 
-    func removeAnnotationItems(_ items: [UIMenuItem]) -> [UIMenuItem] {
-        let stringsToRemove = ["Highlight", "Underline", "Squiggly", "Strikeout"]
+    @objc func editAction() {
+        // do something here
+    }
 
-        // Filter out menu items with titles matching specified strings.
-        return items.filter({ (menuItem) -> Bool in
-            return !stringsToRemove.contains(menuItem.title)
-        })
+    @objc func addToAllPages() {
+        // do something here
+    }
+
+    @objc func selectDate() {
+        // do something here
+    }
+
+    @objc func removeField() {
+        // do something here
     }
 }
