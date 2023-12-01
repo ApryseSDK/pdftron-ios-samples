@@ -52,7 +52,9 @@ class ViewController: UITableViewController {
         navigationController.toolbar.isTranslucent = false
 
         let closeButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissViewer))
-        documentController.navigationItem.leftBarButtonItems?.insert(closeButton, at: 0)
+        var leftItems:[UIBarButtonItem] = documentController.navigationItem.leftBarButtonItems ?? [UIBarButtonItem]()
+        leftItems.insert(closeButton, at: 0)
+        documentController.navigationItem.leftBarButtonItems = leftItems
 
         // Show navigation (and document) controller.
         self.present(navigationController, animated: true, completion: nil)
