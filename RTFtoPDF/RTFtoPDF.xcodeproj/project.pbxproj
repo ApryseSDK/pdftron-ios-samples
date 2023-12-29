@@ -13,6 +13,8 @@
 		7DCADC252B3F6EA100ABDB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC232B3F6EA100ABDB2C /* Main.storyboard */; };
 		7DCADC272B3F6EA300ABDB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC262B3F6EA300ABDB2C /* Assets.xcassets */; };
 		7DCADC2A2B3F6EA300ABDB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC282B3F6EA300ABDB2C /* LaunchScreen.storyboard */; };
+		7DCADC332B3F6EFC00ABDB2C /* PDFTron in Frameworks */ = {isa = PBXBuildFile; productRef = 7DCADC322B3F6EFC00ABDB2C /* PDFTron */; };
+		7DCADC352B3F70F400ABDB2C /* SampleRTF.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7DCADC342B3F70F400ABDB2C /* SampleRTF.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		7DCADC262B3F6EA300ABDB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DCADC292B3F6EA300ABDB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DCADC2B2B3F6EA300ABDB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCADC342B3F70F400ABDB2C /* SampleRTF.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = SampleRTF.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCADC332B3F6EFC00ABDB2C /* PDFTron in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		7DCADC1C2B3F6EA100ABDB2C /* RTFtoPDF */ = {
 			isa = PBXGroup;
 			children = (
+				7DCADC342B3F70F400ABDB2C /* SampleRTF.rtf */,
 				7DCADC1D2B3F6EA100ABDB2C /* AppDelegate.swift */,
 				7DCADC1F2B3F6EA100ABDB2C /* SceneDelegate.swift */,
 				7DCADC212B3F6EA100ABDB2C /* ViewController.swift */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = RTFtoPDF;
+			packageProductDependencies = (
+				7DCADC322B3F6EFC00ABDB2C /* PDFTron */,
+			);
 			productName = RTFtoPDF;
 			productReference = 7DCADC1A2B3F6EA100ABDB2C /* RTFtoPDF.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 7DCADC112B3F6EA100ABDB2C;
+			packageReferences = (
+				7DCADC312B3F6EFC00ABDB2C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */,
+			);
 			productRefGroup = 7DCADC1B2B3F6EA100ABDB2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DCADC2A2B3F6EA300ABDB2C /* LaunchScreen.storyboard in Resources */,
+				7DCADC352B3F70F400ABDB2C /* SampleRTF.rtf in Resources */,
 				7DCADC272B3F6EA300ABDB2C /* Assets.xcassets in Resources */,
 				7DCADC252B3F6EA100ABDB2C /* Main.storyboard in Resources */,
 			);
@@ -361,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DCADC312B3F6EFC00ABDB2C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PDFTron/pdftron-apple-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.6.83126;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DCADC322B3F6EFC00ABDB2C /* PDFTron */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DCADC312B3F6EFC00ABDB2C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */;
+			productName = PDFTron;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DCADC122B3F6EA100ABDB2C /* Project object */;
 }
