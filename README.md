@@ -5,6 +5,9 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 | Sample | Description |
 |--|--|
 |[CADViewer](./CADViewer)| CAD to PDF conversion using WebViewer Server as described [in this guide](https://www.pdftron.com/documentation/web/guides/wv-server-usage/#getpdf)|
+|[CustomDocumentController](./CustomDocumentController)| Using a custom `PTDocumentController` subclass|
+|[ToolbarCustomization](./ToolbarCustomization)| Customizing the UI of the viewer as described [in this guide](https://docs.apryse.com/documentation/ios/guides/basics/viewer/viewer-configuration/)|
+|[ApryseComponentSubclassing](./ApryseComponentSubclassing)| Subclassing an Apryse SDK component (in this case `PTAnnotStyle`) as described [in this guide](https://docs.apryse.com/documentation/ios/guides/tools/customization/#override-classes)|
 
 
 More samples are included in the [.dmg download](https://www.pdftron.com/documentation/ios/get-started/integration/manually/):
