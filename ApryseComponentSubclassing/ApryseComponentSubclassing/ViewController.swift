@@ -10,7 +10,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // Use the `PTOverrides` system to register your subclass. This should be done before any Apryse classes are invoked.
+        PTOverrides.addOverriddenClass(MyAnnotStyle.self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
