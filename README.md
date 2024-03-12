@@ -9,6 +9,8 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 |[ToolbarCustomization](./ToolbarCustomization)| Customizing the UI of the viewer as described [in this guide](https://docs.apryse.com/documentation/ios/guides/basics/viewer/viewer-configuration/)|
 |[ApryseComponentSubclassing](./ApryseComponentSubclassing)| Subclassing an Apryse SDK component (in this case `PTAnnotStyle`) as described [in this guide](https://docs.apryse.com/documentation/ios/guides/tools/customization/#override-classes)|
 |[RTFtoPDF](./RTFtoPDF)| Convert a file from RTF to PDF|
+|[ReactNative/ApryseSubclassSample](./ReactNative/ApryseSubclassSample)| Subclassing an Apryse SDK component when using the React Native wrapper|
+|[Flutter/ApryseSubclassSample](./Flutter/ApryseSubclassSample)| Subclassing an Apryse SDK component when using the Flutter wrapper|
 
 
 More samples are included in the [.dmg download](https://www.pdftron.com/documentation/ios/get-started/integration/manually/):
