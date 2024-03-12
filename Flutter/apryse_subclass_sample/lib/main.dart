@@ -27,7 +27,7 @@ class Viewer extends StatefulWidget {
 class _ViewerState extends State<Viewer> {
   String _version = 'Unknown';
   String _document =
-      "https://pdftron.s3.amazonaws.com/downloads/pl/PDFTRON_mobile_about.pdf";
+      "https://pdftron.s3.amazonaws.com/downloads/pl/form.pdf";
   bool _showViewer = true;
 
   @override
