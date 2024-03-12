@@ -2,6 +2,9 @@
 
 #import <React/RCTBundleURLProvider.h>
 
+#import "Tools/Tools.h"
+#import "ApryseSubclassSample-Swift.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -11,6 +14,7 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
+  [PTOverrides addOverriddenClass:[MyOutlineViewController class]];
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
