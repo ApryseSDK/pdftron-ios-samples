@@ -10,6 +10,7 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 |[ApryseComponentSubclassing](./ApryseComponentSubclassing)| Subclassing an Apryse SDK component (in this case `PTAnnotStyle`) as described [in this guide](https://docs.apryse.com/documentation/ios/guides/tools/customization/#override-classes)|
 |[RTFtoPDF](./RTFtoPDF)| Convert a file from RTF to PDF
 |[RectToImage](./RectToImage)| Extract an area of a page to an image by drawing a rectangle annotation|
+|[ExtractAnnotatedPages](./ExtractAnnotatedPages)| Extract annotated pages into a new document|
 |[ReactNative/ApryseSubclassSample](./ReactNative/ApryseSubclassSample)| Subclassing an Apryse SDK component when using the React Native wrapper|
 |[Flutter/apryse_subclass_sample](./Flutter/apryse_subclass_sample)| Subclassing an Apryse SDK component when using the Flutter wrapper|
 
