@@ -3,3 +3,13 @@ xcuserdata
 /CADViewer/Podfile.lock
 /CADViewer/Pods
 Package.resolved
+
+# Ignore Xcode userdata dirs
+**/xcuserdata/*
+
+# Ignore macOS .DS_Store files
+.DS_Store
+
+**/*.lock
+
+**/xcshareddata/*
