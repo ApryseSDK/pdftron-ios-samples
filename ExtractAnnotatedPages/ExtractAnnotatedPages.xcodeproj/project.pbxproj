@@ -12,6 +12,7 @@
 		7D7BDD112BBB545400DB126C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BDD102BBB545400DB126C /* ViewController.swift */; };
 		7D7BDD162BBB545500DB126C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BDD152BBB545500DB126C /* Assets.xcassets */; };
 		7D7BDD192BBB545500DB126C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BDD172BBB545500DB126C /* LaunchScreen.storyboard */; };
+		7D7BDD222BBB54E600DB126C /* PDFTron in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7BDD212BBB54E600DB126C /* PDFTron */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7BDD222BBB54E600DB126C /* PDFTron in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = ExtractAnnotatedPages;
+			packageProductDependencies = (
+				7D7BDD212BBB54E600DB126C /* PDFTron */,
+			);
 			productName = ExtractAnnotatedPages;
 			productReference = 7D7BDD092BBB545400DB126C /* ExtractAnnotatedPages.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 7D7BDD002BBB545400DB126C;
+			packageReferences = (
+				7D7BDD202BBB54E600DB126C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */,
+			);
 			productRefGroup = 7D7BDD0A2BBB545400DB126C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D7BDD202BBB54E600DB126C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PDFTron/pdftron-apple-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.83604;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D7BDD212BBB54E600DB126C /* PDFTron */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7BDD202BBB54E600DB126C /* XCRemoteSwiftPackageReference "pdftron-apple-package" */;
+			productName = PDFTron;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D7BDD012BBB545400DB126C /* Project object */;
 }
