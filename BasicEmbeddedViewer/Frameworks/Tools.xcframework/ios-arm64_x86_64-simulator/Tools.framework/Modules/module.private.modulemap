@@ -1,0 +1,11 @@
+framework module Tools_Private {
+    // Use the "PrivateHeaders" directory as the umbrella directory, so that a ToolsPrivate.h header
+    // does not need to be maintained for all private headers.
+    umbrella "PrivateHeaders"
+    
+    // Submodules (ie. headers) must be explicitly imported in order to be accessible.
+    explicit module * {
+        export *
+    }
+    export *
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>General</string>
+		<key>settings</key>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>applePencilDrawsInk</string>
+				<key>defaultValue</key>
+				<true/>
+				<key>name</key>
+				<string>Apple Pencil Draws Ink</string>
+				<key>description</key>
+				<string>When no annotation tool is selected, the Apple Pencil will act as a pencil, not a finger.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Create Annotations With</string>
+		<key>footerDescription</key>
+		<string>The &apos;Pencil Only&apos; and &apos;Use System Setting&apos; options require bluetooth permission to function.</string>
+		<key>multivalue</key>
+		<true/>
+		<key>settings</key>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>pencilInteractionMode</string>
+				<key>defaultValue</key>
+				<integer>2</integer>
+				<key>name</key>
+				<string>Finger And Pencil</string>
+				<key>description</key>
+				<string>Finger and Pencil touches create annotations.</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>pencilInteractionMode</string>
+				<key>defaultValue</key>
+				<integer>2</integer>
+				<key>name</key>
+				<string>Pencil Only</string>
+				<key>description</key>
+				<string>Pencil touches create annotations, finger touches pan and zoom.</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>pencilInteractionMode</string>
+				<key>defaultValue</key>
+				<integer>2</integer>
+				<key>name</key>
+				<string>Use System Setting</string>
+				<key>description</key>
+				<string>The iOS Pencil system setting is used.</string>
+				<key>minOSVersion</key>
+				<string>14.0</string>
+				<key>unavailableValue</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
