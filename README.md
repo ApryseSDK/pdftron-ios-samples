@@ -4,10 +4,10 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 
 | Sample | Description |
 |--|--|
-|[CADViewer](./CADViewer)| CAD to PDF conversion using WebViewer Server as described [in this guide](https://www.pdftron.com/documentation/web/guides/wv-server-usage/#getpdf)|
+|[CADViewer](./CADViewer)| CAD to PDF conversion using WebViewer Server as described [in this guide](https://docs.apryse.com/core/get-started/samples/cad2pdftest)|
 |[CustomDocumentController](./CustomDocumentController)| Using a custom `PTDocumentController` subclass|
-|[ToolbarCustomization](./ToolbarCustomization)| Customizing the UI of the viewer as described [in this guide](https://docs.apryse.com/documentation/ios/guides/basics/viewer/viewer-configuration/)|
-|[ApryseComponentSubclassing](./ApryseComponentSubclassing)| Subclassing an Apryse SDK component (in this case `PTAnnotStyle`) as described [in this guide](https://docs.apryse.com/documentation/ios/guides/tools/customization/#override-classes)|
+|[ToolbarCustomization](./ToolbarCustomization)| Customizing the UI of the viewer as described [in this guide](https://docs.apryse.com/ios/get-started/customize)|
+|[ApryseComponentSubclassing](./ApryseComponentSubclassing)| Subclassing an Apryse SDK component (in this case `PTAnnotStyle`)|
 |[RTFtoPDF](./RTFtoPDF)| Convert a file from RTF to PDF
 |[RectToImage](./RectToImage)| Extract an area of a page to an image by drawing a rectangle annotation|
 |[ExtractAnnotatedPages](./ExtractAnnotatedPages)| Extract annotated pages into a new document|
@@ -15,7 +15,7 @@ This repository contains a collection of samples for PDFTron's iOS SDK.
 |[Flutter/apryse_subclass_sample](./Flutter/apryse_subclass_sample)| Subclassing an Apryse SDK component when using the Flutter wrapper|
 
 
-More samples are included in the [.dmg download](https://www.pdftron.com/documentation/ios/get-started/integration/manually/):
+More samples are included in the [.dmg download](https://docs.apryse.com/ios/get-started/integration):
 
 | Sample | Description |
 |--|--|
@@ -23,4 +23,4 @@ More samples are included in the [.dmg download](https://www.pdftron.com/documen
 |Showcase|The source code for our feature showcase sample.|
 |CPP Sample|Demonstrates how to use PDFTron via a C++ interface.|
 |Custom|Demonstrates the use of a custom filter, which enables the implementation for custom DRM solutions.|
-|Miscellaneous Samples|An Xcode project that contains demonstrates [core programmatic PDF functionality](https://www.pdftron.com/documentation/samples/?platforms=ios).|
+|Miscellaneous Samples|An Xcode project that contains demonstrates [core programmatic PDF functionality](https://docs.apryse.com/ios/get-started/samples).|
